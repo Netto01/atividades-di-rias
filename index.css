@@ -45,8 +45,9 @@ header p {
 /* Container principal */
 #container {
     display: flex;
-    flex-direction: column; /* Força as cartas a ficarem uma embaixo da outra */
-    align-items: center; /* Centraliza as cartas horizontalmente */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px; /* Espaçamento entre as cartas */
     padding: 20px;
     background-image: url('../images/background.png');
@@ -59,11 +60,12 @@ header p {
 /* Flip card styling */
 .flip-card {
     background-color: transparent;
-    width: 100%; /* Ocupe 100% da largura disponível no container */
-    max-width: 300px; /* Limita a largura das cartas */
-    height: auto;
+    width: 300px;
+    height: 450px;
     perspective: 1000px;
     cursor: pointer;
+    flex-basis: calc(100% - 60px); /* Garante que a carta ocupe 100% da largura menos o gap */
+    max-width: 300px; /* Largura máxima */
 }
 
 .flip-card-inner {
@@ -158,45 +160,5 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    header p {
-        font-size: 1.1rem;
-    }
-
-    #container {
-        flex-direction: column; /* Garante que as cartas fiquem uma abaixo da outra */
-        align-items: center; /* Centraliza as cartas no mobile */
-        gap: 20px; /* Ajusta o espaço entre as cartas no mobile */
-    }
-
-    .flip-card {
-        width: 100%; /* Ocupe 100% da largura disponível no container */
-        max-width: 300px; /* Limita a largura das cartas em dispositivos móveis */
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    #container {
-        flex-direction: column; /* Garante que as cartas fiquem em coluna no mobile */
-        align-items: center;
-    }
-
-    .flip-card {
-        width: 100%; /* Ocupe 100% da largura disponível */
-        max-width: 280px; /* Limita a largura das cartas no mobile */
-        height: auto;
-    }
-
-    .flip-card-front, .flip-card-back {
-        height: auto; /* Ajusta a altura automaticamente com a largura */
     }
 }
