@@ -67,7 +67,7 @@ header p {
 }
 
 /* Container principal */
-#container {
+#container, #container-2 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
