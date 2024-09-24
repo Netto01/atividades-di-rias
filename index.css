@@ -23,6 +23,9 @@ body {
 header {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza tudo no meio */
     animation: fadeInDown 1s ease-out;
 }
 
@@ -35,9 +38,30 @@ header h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para o botão */
+.btn-container {
+    margin: 20px 0; /* Espaçamento entre o título e o texto */
+}
+
+.btn-whatsapp {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #0056b3;
+}
+
 header p {
     font-size: 1.4rem;
-    margin-top: 10px;
+    margin-top: 30px; /* Espaçamento extra entre o botão e o texto */
     color: #555;
     font-weight: 300;
 }
