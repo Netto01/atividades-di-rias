@@ -170,8 +170,9 @@ footer p {
     }
 
     .flip-card {
-        width: 240px; /* Diminui a largura em tablets */
-        height: 360px; /* Diminui a altura em tablets */
+        width: 100%;
+        height: auto; /* Deixa a altura se ajustar automaticamente */
+        max-width: 280px;
     }
 }
 
