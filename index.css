@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: linear-gradient(135deg, #69849b 0%, #55848b42 100%); ;
 }
 
 body {
@@ -45,7 +46,7 @@ header h1 {
 
 .btn-whatsapp {
     padding: 15px 30px;
-    background-color: #007BFF;
+    background-color: black;
     color: white;
     font-size: 1.2rem;
     border-radius: 8px;
@@ -56,7 +57,7 @@ header h1 {
 }
 
 .btn-whatsapp:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }
 
 header p {
@@ -166,7 +167,7 @@ footer {
     padding-bottom: 20px;
     border-top: 1px solid #ddd;
     font-size: 0.9rem;
-    color: #888;
+    color: black;
     font-weight: 300;
     background-color: #f0f0f0;
 }
