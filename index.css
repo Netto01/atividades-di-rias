@@ -23,9 +23,6 @@ body {
 header {
     text-align: center;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column; /* Coloca os elementos em coluna */
-    align-items: center; /* Centraliza tudo no meio */
     animation: fadeInDown 1s ease-out;
 }
 
@@ -61,7 +58,7 @@ header h1 {
 
 header p {
     font-size: 1.4rem;
-    margin-top: 30px; /* Espaçamento extra entre o botão e o texto */
+    margin-top: 10px;
     color: #555;
     font-weight: 300;
 }
