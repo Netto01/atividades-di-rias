@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: linear-gradient(135deg, #69849b 0%, #55848b42 100%); ;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #f0f8ff 0%, #e0f7fa 100%);
-    color: #333;
+    color: gainsboro;
     margin: 0;
     padding: 20px;
     overflow-x: hidden;
