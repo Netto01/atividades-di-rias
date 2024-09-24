@@ -159,19 +159,19 @@ footer p {
     }
 }
 
-/* Responsividade */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     header p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .flip-card {
-        width: 240px;
-        height: 340px;
+        width: 240px; /* Diminui a largura em tablets */
+        height: 360px; /* Diminui a altura em tablets */
     }
 }
 
@@ -183,6 +183,11 @@ footer p {
 
     .flip-card {
         width: 100%;
-        max-width: 280px;
+        max-width: 280px; /* Largura máxima para garantir que não corte */
+        height: auto; /* Deixa a altura se ajustar automaticamente */
+    }
+
+    .flip-card-front, .flip-card-back {
+        height: auto; /* Ajusta automaticamente com a largura */
     }
 }
